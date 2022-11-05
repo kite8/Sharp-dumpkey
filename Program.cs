@@ -92,6 +92,9 @@ namespace wechatDumpKey
                 httpClient.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.7113.93 Safari/537.36");
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
                 //https://stackoverflow.com/questions/32994464/could-not-create-ssl-tls-secure-channel-despite-setting-servercertificatevalida
+                //https://raw.githubusercontent.com/kite8/Sharp-dumpkey/main/Address.json
+                //https://raw.fgit.ml/kite8/Sharp-dumpkey/main/Address.json
+                // Stream Httpdata = httpClient.OpenRead("https://jihulab.com/bluesky1/padding/-/raw/main/README.md");
                 Stream Httpdata = httpClient.OpenRead("https://jihulab.com/bluesky1/padding/-/raw/main/README.md");
 
                 StreamReader reader = new StreamReader(Httpdata);
